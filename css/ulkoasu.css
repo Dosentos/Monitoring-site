@@ -1,0 +1,224 @@
+html, body {
+    height: 100%;
+    min-width: 240px;
+    font-family: Lato, Helvetica, sans-serif;
+}
+
+h1, h2, h3, h4, h5{
+    font-family: Verdana, Helvetica, sans-serif;
+}
+p{
+    font-size: 1.2em;
+}
+
+h2{
+    font-size: 1.9em;
+    margin: 0;
+}
+
+
+#wrapper {
+    min-height: 100%;
+}
+#content {
+    overflow:auto;
+    padding-bottom: 150px;
+}
+#footer {
+    position: relative;
+    margin-top: -150px; /* negative value of footer height */
+    height: 150px;
+    clear:both;
+    padding-top: 10px;
+    text-align: center;
+    padding-bottom: 10px;
+}
+.bg-navy{
+    background-color: #12408c;
+    /*Headerin tausta, logo*/
+}
+.bg-blue{
+    background-color: #2a6cda;
+    /*Navigaatio elementtien tausta*/
+}
+.bg-lightblue{
+    background-color: #659fff;
+    /*Nav aktiiviset painikkeet*/
+}
+.bg-grey{
+    background-color: lightgrey;
+    /*Footer tausta*/
+}
+#header, #navigation a{
+    color: #ffffff;
+}
+#header{
+    text-align: center;
+    padding-top: 20px;
+    padding-bottom: 10px;
+}
+#logo-big{
+    display: none;
+}
+#header-slogan{
+    display: none;
+}
+#header-logo img{
+    width: 100px;
+}
+#hamburger{
+    float: right;
+}
+#hamburger button{
+    border-radius: 10px;
+    font-size: 40px;
+    padding: 8px;
+    background: #12408c;
+    text-decoration: none;
+    border: none;
+}
+#hamburger button:hover{
+    color: grey;
+}
+#navigation{
+    text-decoration: none;
+    list-style-type: none;
+    text-align: center;
+    display: none;
+}
+#navigation ul{
+    list-style: none;
+    padding: 0;
+}
+#navigation li{
+    padding: 5px;
+    color: white;
+}
+#navigation li:hover{
+    background-color: #659fff;
+}
+.clearer{
+    clear: both;
+}
+#footer img{
+    padding-bottom: 5px;
+    width: 40px;
+}
+#content > article{
+    max-width: 960px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+#content > article > .page-heading{
+    padding-bottom: 10px;
+    border-bottom: 3px double #555;
+    margin-bottom: 20px;
+}
+
+.info{
+    text-align: center;
+}
+.chart {
+    width: 100%;
+    min-height: 200px;
+}
+
+#alert{
+    display: none;
+}
+
+.left{
+    float: left;
+}
+.right{
+    float:right;
+}
+.top{
+    padding: 10px 0;
+    height: 25%;
+    text-align: center;
+}
+.bottom{
+    padding: 10px;
+    height: 75%;
+}
+.text-container{
+    border: 2px solid darkgray;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    box-shadow: 10px 5px 10px #888888;
+}
+#homepage-content > section > img{
+    max-width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    padding-bottom: 20px;
+}
+#register-link{
+    margin-top: 200px;
+    color: red;
+}
+@media only screen and (min-width:600px){
+
+
+    #header-logo a{
+        text-align: center;
+    }
+    #header-logo img{
+        width: 50%;
+    }
+    #logo-small{
+        display: none;
+    }
+    #logo-big{
+        display: inline;
+    }
+    #hamburger{
+        display: none;
+    }
+
+    #navigation{
+        display: block;
+    }
+
+    #navigation ul{
+        width: 100%;
+        overflow: hidden;
+    }
+    #navigation li{
+        width: 24.5%;
+        margin: 0;
+        display: inline-block;
+    }
+
+    .chart {
+        min-height: 400px;
+    }
+}
+
+
+@media only screen and (min-width:960px){
+
+    #header-slogan{
+        display: block;
+    }
+    #header-slogan h3{
+        text-transform: uppercase;
+        font-style: italic;
+        padding-top: 25px;
+    }
+    #navigation li{
+        max-width: 200px;
+    }
+}
+@media only screen and (min-width:1200px) {
+
+    #header{
+        padding-top: 50px;
+        padding-bottom: 50px;
+    }
+
+}
