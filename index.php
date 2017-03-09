@@ -45,7 +45,7 @@ if(isset($_SESSION['user'])){
 <?php
 
 if(!isset($_SESSION['user'])){
-    if($_GET['page'] == 'register'){
+    if(isset($_GET['page']) && $_GET['page'] == 'register'){
         include 'register.php';
     }
     else{
